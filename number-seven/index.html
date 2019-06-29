@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>ARKADEMY BOOTCAMP</title>
+    </head>
+    <body class=" bg-light">
+        <nav class="navbar navbar-light bg-white">
+            <a class="navbar-brand" href="#"><img src="https://www.arkademy.com/asset/v4/img/logo%20arkademy-tech%20academy-03.svg" alt="" height="106" width="150"><b>ARKADEMY BOOTCAMP</b></a>
+        </nav>
+        <div class="container">
+        <div class="mt-5">
+            <a href="#" class="btn btn-warning text-white float-right mb-3" data-toggle="modal" data-target="#addModal">Add Data</a>
+            <table class="table table-bordered">
+                <thead>
+                    <th>Name</th>
+                    <th>Hobby</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </thead>
+
+                <tbody>
+                    <td>Soni</td>
+                    <td>Mobile Legends</td>
+                    <td>Game</td>
+                    <td class="text-center">
+                    <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash text-danger"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-edit text-success"></i></a>
+                    </td>
+                </tbody>
+
+                <tbody>
+                    <td>Isgl</td>
+                    <td>Futsal</td>
+                    <td>Olahraga</td>
+                    <td class="text-center">
+                    <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash text-danger"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-edit text-success"></i></a>
+                    </td>
+                </tbody>
+
+                <tbody>
+                    <td>Iqbal</td>
+                    <td>Basket</td>
+                    <td>Olahraga</td>
+                    <td class="text-center">
+                    <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash text-danger"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-edit text-success"></i></a>
+                    </td>
+                </tbody>
+
+                <tbody>
+                    <td>Kiky</td>
+                    <td>PUBG</td>
+                    <td>Game</td>
+                    <td class="text-center">
+                    <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash text-danger"></i></a>
+                    <a href="#" data-toggle="modal" data-target="#editModal"><i class="fa fa-edit text-success"></i></a>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+        <!-- Add Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                    <input type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                    <select class="custom-select" name="hobby">
+                        <option value="" selected disabled>Hobby</option>
+                        <option value="">Mobile Legends</option>
+                        <option value="">Futsal</option>
+                        <option value="">Basket</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                    <select class="custom-select" name="category">
+                        <option value="" selected disabled>Category</option>
+                        <option value="">Game</option>
+                        <option value="">Olahraga</option>
+                    </select>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning text-white float-right mb-3">Add Data</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Delete Modal -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Delete Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Antu_task-complete.svg/768px-Antu_task-complete.svg.png" width="170" height="170"></img>
+                <br><b>Data telah berhasil dihapus.</b></center>
+                
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Edit Modal -->
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Edit Data</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                    <input type="text" class="form-control" name="name" placeholder="name">
+                    </div>
+
+                    <div class="form-group col-md-12">
+                    <select class="custom-select" name="hobby">
+                        <option value="" selected disabled>Hobby</option>
+                        <option value="">Mobile Legends</option>
+                        <option value="">Futsal</option>
+                        <option value="">Basket</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                    <select class="custom-select" name="category">
+                        <option value="" selected disabled>Category</option>
+                        <option value="">Game</option>
+                        <option value="">Olahraga</option>
+                    </select>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning text-white float-right mb-3">Edit Data</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>

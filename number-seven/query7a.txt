@@ -1,0 +1,1 @@
+SELECT nama.name AS name, hobi.name AS hobby, kategori.name AS category FROM nama JOIN hobi ON nama.id_hobby = hobi.id JOIN kategori ON nama.id_category = kategori.id

@@ -1,19 +1,17 @@
 <?php
 
-    function calculate($treeHeight, $year) {
+    function calculate($height, $year) {
 
-        $treeHeight = 1;
+        $treeHeight = $height;
 
         for($i=1; $i<=$year; $i++) {
-            $spring = $treeHeight + 1;
-            $summer = $spring * 3;
-            $autumn = $summer - 1.5;
-            $winter = ($autumn * 0.15) + $autumn;
-
-            $treeHeight = $winter + $treeHeight;
+            $treeHeight += 1;
+            $treeHeight *= 3;
+            $treeHeight -= 1.5;
+            $treeHeight += $treeHeight * 0.15;
             
             if ($i % 2 == 0) {
-                $treeHeight = $treeHeight / 2;
+                $treeHeight /= 2;
             }
         }
     

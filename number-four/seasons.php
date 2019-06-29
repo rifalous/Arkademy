@@ -1,7 +1,6 @@
 <?php
 
     function calculate($height, $year) {
-
         $treeHeight = $height;
 
         for($i=1; $i<=$year; $i++) {
@@ -14,7 +13,6 @@
                 $treeHeight /= 2;
             }
         }
-    
         return $treeHeight;
     }
 

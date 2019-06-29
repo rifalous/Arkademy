@@ -21,3 +21,12 @@ Segitiga Kosong
 ### Number 4
 Pohon dan Musim
 - [x] Selesai
+### Number 5
+Sorting
+- [x] Selesai
+### Number 6
+- [ ] Skip
+### Number 7
+- [x] 7A, Selesai
+- [x] 7B, Selesai
+- [ ] 7C

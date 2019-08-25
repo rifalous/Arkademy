@@ -1,5 +1,5 @@
 # Arkademy
-Repository for Arkademy Bootcamp Batch 11.
+This is Repository for Arkademy Bootcamp Batch 11.
 
 # Tools :
 - Ms. Visual Code
